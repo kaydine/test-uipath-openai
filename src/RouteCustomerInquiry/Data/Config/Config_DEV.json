@@ -7,6 +7,9 @@
     "processName":"RouteCustomerInquiry",
     "processName_Desc":"Business process name",
     
+    "defaultFolder":"Automation/R002_RouteCustomerInquiry",
+    "defaultFolder_Desc":"Orchestrator folder to be used by default for all Orchestrator operations.",
+    
     "queueName":"R002_RouteCustomerInquiry",
     "queueName_Desc":"Orchestrator queue Name. The value must match with the queue name defined on Orchestrator.",
     
@@ -51,6 +54,26 @@
   "assets":{
 
   },
-  "assets_Desc":"Assets to be retrieved from Orchestrator. Set the Asset Name in key and leave the value blank."
+  "assets_Desc":"Assets to be retrieved from Orchestrator. Set the Asset Name in key and leave the value blank.",
+
+  "openAI" : {
+    "apiKeyCredentialName" : "OpenAIAPIKey",
+    "apiKeyCredentialName_Desc" : "Credential name for API Key to authenticate to OpenAI API",
+
+    "completionsEndpoint" : "https://api.openai.com/v1/completions",
+    "completionsEndpoint_Desc" : "OpenAI completions API endpoint",
+
+    "sentimentReqBodyTemplate" : {
+      "model": "text-davinci-003",
+      "prompt": "Decide whether a customer inquiry's sentiment is positive, neutral, or negative.\n\nCustomer inquiry: \"{0}\"\nSentiment:",
+      "max_tokens": 60,
+      "temperature": 0,
+      "top_p": 1,
+      "frequency_penalty": 0.5,
+      "presence_penalty": 0.0
+    },
+    "sentimentReqBodyTemplate_Desc" : "Template request body for sentiment analysis using completions OpenAI API"
+    
+  }
 
 }

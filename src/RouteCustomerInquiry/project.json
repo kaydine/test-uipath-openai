@@ -83,6 +83,14 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0a1013b3-003d-436d-a5c8-5d189bcbe04d",
+        "dataVariationFilePath": ".variations\\ClassifySentimentCustomerInquiry_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TC_ClassifySentimentCustomerInquiry.xaml"
       }
     ],
     "modernBehavior": true
