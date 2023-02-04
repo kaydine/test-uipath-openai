@@ -1,4 +1,4 @@
-# [Process ID] [Process Name] [- Sub-Process Name (optional)]
+# R002 Route Customer Inquiry
 
 ## Project Details
 
@@ -7,6 +7,7 @@
 
 ### Robot Type
 <!--- Attended / Unattended -->
+Unattended
 
 ## Getting Started
 

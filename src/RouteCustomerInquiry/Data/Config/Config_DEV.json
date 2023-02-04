@@ -1,13 +1,13 @@
 {
 
   "generalSettings": {
-    "processID":"[ProcessID]",
+    "processID":"R002",
     "processID_Desc":"Business process ID",
     
-    "processName":"[ProcessName]",
+    "processName":"RouteCustomerInquiry",
     "processName_Desc":"Business process name",
     
-    "queueName":"[ProcessID]_[ProcessName]",
+    "queueName":"R002_RouteCustomerInquiry",
     "queueName_Desc":"Orchestrator queue Name. The value must match with the queue name defined on Orchestrator.",
     
     "queueFolder":"",
@@ -22,7 +22,7 @@
     "maxConsecutiveSystemExceptions":"2",
     "maxConsecutiveSystemExceptions_Desc":"The number of consecutive system exceptions allowed. If MaxConsecutiveSystemExceptions is reached, the job is stopped. To disable this feature, set the value to 0. ",
     
-    "exSSFolderPath":"C:\\Temp\\[ProcessID]_[ProcessName]\\Result\\ExceptionScreenshot",
+    "exSSFolderPath":"C:\\Temp\\R002_RouteCustomerInquiry\\Result\\ExceptionScreenshot",
     "exSSFolderPath_Desc":"Folder to store exception screenshots",
 
     "retryNumberOrchestratorActivities":"2",
@@ -31,13 +31,13 @@
     "shouldMarkJobAsFaulted":"FALSE",
     "shouldMarkJobAsFaulted_Desc":"Must be TRUE or FALSE. If the value is TRUE and an error occurs in Initialization state or the maxConsecutiveSystemExceptions is reached, the job is marked as Faulted.",
     
-    "workFolderPath":"C:\\Temp\\[ProcessID]_[ProcessName]\\Work\\{0}",
+    "workFolderPath":"C:\\Temp\\R002_RouteCustomerInquiry\\Work\\{0}",
     "workFolderPath_Desc":"Folder to store temporary files to be used by the process. Arg0: date of process run (workFolderDateFmt format). This folder will be deleted after process run and on retry.",
 
     "workFolderDateFmt":"yyyyMMdd",
     "workFolderDateFmt_Desc":"Work folder date format",
     
-    "bkFolderPath":"C:\\Temp\\[ProcessID]_[ProcessName]\\Backup\\{0}",
+    "bkFolderPath":"C:\\Temp\\R002_RouteCustomerInquiry\\Backup\\{0}",
     "bkFolderPath_Desc":"Folder to store backup files. Arg0: date of process run(bkFolderDateFmt format). This folder will be deleted based on bkDays setting.",
     
     "bkFolderDateFmt":"yyyyMMdd",
