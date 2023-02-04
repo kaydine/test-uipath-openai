@@ -1,0 +1,56 @@
+{
+
+  "generalSettings": {
+    "processID":"[ProcessID]",
+    "processID_Desc":"Business process ID",
+    
+    "processName":"[ProcessName]",
+    "processName_Desc":"Business process name",
+    
+    "queueName":"[ProcessID]_[ProcessName]",
+    "queueName_Desc":"Orchestrator queue Name. The value must match with the queue name defined on Orchestrator.",
+    
+    "queueFolder":"",
+    "queueFolder_Desc":"Folder name where the queue set in [queueName] is registered. For classic folders leave the value field empty.",
+    
+    "assetFolder":"",
+    "assetFolder_Desc":"Folder name where the assets set in [assets] are registered. For classic folders leave the value field empty.",
+    
+    "maxRetryNumber":"2",
+    "maxRetryNumber_Desc":"Used as max retry number of dispatcher process and of each transaction in performer process. The robot will retry the same transaction which failed with a system exception. Must be an integer value.",
+    
+    "maxConsecutiveSystemExceptions":"2",
+    "maxConsecutiveSystemExceptions_Desc":"The number of consecutive system exceptions allowed. If MaxConsecutiveSystemExceptions is reached, the job is stopped. To disable this feature, set the value to 0. ",
+    
+    "exSSFolderPath":"C:\\Temp\\[ProcessID]_[ProcessName]\\Result\\ExceptionScreenshot",
+    "exSSFolderPath_Desc":"Folder to store exception screenshots",
+
+    "retryNumberOrchestratorActivities":"2",
+    "retryNumberOrchestratorActivities_Desc":"The number of times Orchestrator activities (e.g. Get Transaction Item, Set Transaction Status, Get Asset, etc.) is retried in case of an exception. Must be an integer >= 1.",
+
+    "shouldMarkJobAsFaulted":"FALSE",
+    "shouldMarkJobAsFaulted_Desc":"Must be TRUE or FALSE. If the value is TRUE and an error occurs in Initialization state or the maxConsecutiveSystemExceptions is reached, the job is marked as Faulted.",
+    
+    "workFolderPath":"C:\\Temp\\[ProcessID]_[ProcessName]\\Work\\{0}",
+    "workFolderPath_Desc":"Folder to store temporary files to be used by the process. Arg0: date of process run (workFolderDateFmt format). This folder will be deleted after process run and on retry.",
+
+    "workFolderDateFmt":"yyyyMMdd",
+    "workFolderDateFmt_Desc":"Work folder date format",
+    
+    "bkFolderPath":"C:\\Temp\\[ProcessID]_[ProcessName]\\Backup\\{0}",
+    "bkFolderPath_Desc":"Folder to store backup files. Arg0: date of process run(bkFolderDateFmt format). This folder will be deleted based on bkDays setting.",
+    
+    "bkFolderDateFmt":"yyyyMMdd",
+    "bkFolderDateFmt_Desc":"Backup folder date format",
+    
+    "bkDays":"7",
+    "bkDays_Desc":"Delete backup folder created before <current date> - bkDays."
+    
+  },
+  
+  "assets":{
+
+  },
+  "assets_Desc":"Assets to be retrieved from Orchestrator. Set the Asset Name in key and leave the value blank."
+
+}
