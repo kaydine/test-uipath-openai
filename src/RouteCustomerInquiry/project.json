@@ -87,10 +87,18 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "0a1013b3-003d-436d-a5c8-5d189bcbe04d",
-        "dataVariationFilePath": ".variations\\ClassifySentimentCustomerInquiry_Sheet1.json",
+        "dataVariationFilePath": ".variations\\ClassifyCustomerInquiry_Sheet1.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\TC_ClassifySentimentCustomerInquiry.xaml"
+        "fileName": "Tests\\TC_ClassifyCustomerInquirySentiment.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "84c7767f-8bbe-4839-b5f9-3ccb063462c2",
+        "dataVariationFilePath": ".variations\\ClassifyCustomerInquiry_Sheet1_1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TC_ClassifyCustomerInquiryCategory.xaml"
       }
     ],
     "modernBehavior": true

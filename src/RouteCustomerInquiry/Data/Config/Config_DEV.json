@@ -72,7 +72,18 @@
       "frequency_penalty": 0.5,
       "presence_penalty": 0.0
     },
-    "sentimentReqBodyTemplate_Desc" : "Template request body for sentiment analysis using completions OpenAI API"
+    "sentimentReqBodyTemplate_Desc" : "Template request body for sentiment analysis using completions OpenAI API",
+
+    "categoryReqBodyTemplate" : {
+      "model": "text-davinci-003",
+      "prompt": "Decide which category a customer inquiry to Amazon  belong to: Amazon devices, delivery, or account.\n\nCustomer inquiry: \"The date keeps changing. Not happy with service from amazon logistics\"\nCategory:delivery\n\nCustomer inquiry: \"Is the Echo Show no longer supported?\"\nCategory:Amazon devices\n\nCustomer inquiry: \"I have contacted through email. Please check and revert.\"\nCategory:?\n\nCustomer inquiry: \"{0}\"\nCategory:",
+      "max_tokens": 60,
+      "temperature": 0,
+      "top_p": 1,
+      "frequency_penalty": 0.5,
+      "presence_penalty": 0.0
+    },
+    "categoryReqBodyTemplate_Desc" : "Template request body for category classification using completions OpenAI API"
     
   }
 
