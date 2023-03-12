@@ -1,0 +1,12 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\ClassifyCustomerInquiry_Sheet1.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\ClassifyCustomerInquiry_Sheet1_1.json",
+      "dataVariationType": "File"
+    }
+  ]
+}

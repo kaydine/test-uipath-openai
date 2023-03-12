@@ -1,6 +1,6 @@
 {
-  "name": "UiPathTemplateTransactional",
-  "description": "UiPath project template based on Robotic Enterprise Framework for transactional process.",
+  "name": "RouteCustomerInquiry",
+  "description": "Routes customer inquiry received in email to appropriate department.",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.16.0]",
@@ -83,6 +83,22 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0a1013b3-003d-436d-a5c8-5d189bcbe04d",
+        "dataVariationFilePath": ".variations\\ClassifyCustomerInquiry_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TC_ClassifyCustomerInquirySentiment.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "84c7767f-8bbe-4839-b5f9-3ccb063462c2",
+        "dataVariationFilePath": ".variations\\ClassifyCustomerInquiry_Sheet1_1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TC_ClassifyCustomerInquiryCategory.xaml"
       }
     ],
     "modernBehavior": true
